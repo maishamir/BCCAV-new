@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from '../Header/Header';
+import "./Layout.scss"
 
 function Layout({children}) {
   return (
-    <div>
-        <header>Header + Nav</header>
+    <div className='layout'>
+        <Header/>
         {children}
         <footer>Footer</footer>
     </div>
