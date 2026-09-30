@@ -1,0 +1,45 @@
+.hero {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  margin-top: 1rem;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+
+  &__content-text {
+    position: absolute;
+    color: white;
+    top: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 4rem;
+    padding: 3.5rem;
+    background: rgba(255, 252, 250, 0.211);
+    backdrop-filter: blur(30px) saturate(120%);
+    border-radius: 3rem;
+    top: 50%;
+    transform: translateY((-50%));
+    margin-left: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    box-shadow:
+      inset 1px 1px 0 rgba(255, 255, 255, 0.45),
+      inset -1px -1px 0 rgba(255, 255, 255, 0.08),
+      0 12px 30px rgba(0, 0, 0, 0.18);
+
+    &--cursive {
+      font-family: "Arapey", serif;
+      font-style: italic;
+    }
+
+    small {
+      margin-top: -1.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}

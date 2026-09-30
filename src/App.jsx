@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Layout from "./components/Layout/Layout";
 import "./App.css";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <>
       <Layout>
-        <main>
-          <h1>APP</h1>
-        </main>
+        <Hero />
       </Layout>
     </>
   );
