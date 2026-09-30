@@ -15,7 +15,10 @@ function Hero() {
           <br />
           <small>Through Culture, Community, and Friendship</small>
         </div>
-          <button className="hero__button">Become a Member</button>
+        <div className="hero__buttons">
+          <button className="hero__buttons--cta">Become a Member</button>
+          <a href="#" className="hero__buttons--secondary">View Events</a>
+        </div>
       </div>
     </section>
   );

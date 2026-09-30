@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .hero {
   flex: 1;
   min-height: 0;
@@ -12,13 +14,14 @@
     border-radius: 50px;
   }
 
-  &__content-text {
+  &__content {
     position: absolute;
-    color: white;
     top: 0;
     font-family: "Hanken Grotesk", sans-serif;
     font-size: 4rem;
-    padding: 3.5rem;
+    // padding: 3rem 5.5rem 3rem 3rem;
+    width: 40%;
+    padding: 3rem;
     background: rgba(255, 252, 250, 0.211);
     backdrop-filter: blur(30px) saturate(120%);
     border-radius: 3rem;
@@ -32,14 +35,42 @@
       inset -1px -1px 0 rgba(255, 255, 255, 0.08),
       0 12px 30px rgba(0, 0, 0, 0.18);
 
-    &--cursive {
-      font-family: "Arapey", serif;
-      font-style: italic;
+    &-text {
+      color: white;
+      &--cursive {
+        font-family: "Arapey", serif;
+        font-style: italic;
+      }
+      small {
+        margin-top: 2.25rem;
+        display: block;
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  &__buttons {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &--cta {
+      padding: 1rem 0.875rem;
+      border-radius: 0.875rem;
+      border: none;
+      background-color: $green;
+      color: white;
+      cursor: pointer;
     }
 
-    small {
-      margin-top: -1.5rem;
-      font-size: 1.25rem;
+    &--secondary {
+      color: white;
+      text-decoration: underline;
+      font-weight: normal;
+      cursor: pointer;
+      text-underline-offset: 4px;
+
     }
   }
 }
